@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <a href="/blog/new"> NEW FORM</a>
+    <% for(let blog of allBlogs){ %>
+        <div>
+            <h1>id: <%= blog.id %></h1>
+            <h2>blog: <%= blog.blog %></h2>
+            <p>author: <%= blog.author  %></p>
+        </div>
+    <% } %>
+</body>
+</html>
